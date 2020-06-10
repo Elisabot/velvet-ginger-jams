@@ -9,7 +9,6 @@ class Player extends React.Component {
 	render() {
 		return (
 			<div>
-				{/*<p>i coordinate the tapes and data</p>*/}
 				<div>{this.renderCassette('mix seven: Bedroom Dance Party')}</div>
 			</div>
 			)

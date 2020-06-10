@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/*<p>i just render things</p>*/}
+      <h3>Mixtape Dance Party Heaven</h3>
         <Player/>
       </header>
     </div>
