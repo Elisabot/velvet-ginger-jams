@@ -1,17 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-class Cassette extends React.Component {
-	render() {
-		return (
-			<Tape>
-				<LeftPeg />
-				<RightPeg />
-				<Window />
-				<Buttress />
-			</Tape>
-		)
-	}
+function Cassette(props) {
+	return (
+		<Tape>
+			<LeftPeg />
+			<RightPeg />
+			<Window />
+			<Buttress />
+		</Tape>
+	)
 }
 
 const Tape = styled.div`
