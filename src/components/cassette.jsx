@@ -1,23 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// arrow functions real quick
-// const i = () => someshit happens
-
-class Cassette extends React.Component {
-	render() {
-		return (
-			<>
-				{/*<p>I'm an instance of the Cassette</p>*/}
-				<Tape>
-					<LeftPeg />
-					<RightPeg />
-					<Window />
-					<Buttress />
-				</Tape>
-			</>
-		)
-	}
+function Cassette(props) {
+	return (
+		<Tape>
+			<LeftPeg />
+			<RightPeg />
+			<Window />
+			<Buttress />
+		</Tape>
+	)
 }
 
 const Tape = styled.div`
