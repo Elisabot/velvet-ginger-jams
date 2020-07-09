@@ -1,17 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
-class Cassette extends React.Component {
-	render() {
-		return (
-			<Tape>
-				<LeftPeg />
-				<RightPeg />
-				<Window />
-				<Buttress />
-			</Tape>
-		)
-	}
+function Cassette(props) {
+	return (
+		<Tape className="tape" onClick={props.onClick}>
+			<Label>
+				{props.value}
+			</Label>
+			<LeftPeg />
+			<RightPeg />
+			<Window />
+			<Buttress />
+		</Tape>
+	)
 }
 
 const Tape = styled.div`
@@ -22,8 +23,7 @@ const Tape = styled.div`
 	border-radius: 10px;
 `
 const Label = styled.div`
-	margin-top: 4px;
-	font-size: medium;
+	font-size: small;
 `
 const LeftPeg = styled.div`
 	position: absolute;
