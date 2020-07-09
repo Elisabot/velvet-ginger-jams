@@ -3,7 +3,10 @@ import styled from 'styled-components';
 
 function Cassette(props) {
 	return (
-		<Tape>
+		<Tape className="tape" onClick={props.onClick}>
+			<Label>
+				{props.value}
+			</Label>
 			<LeftPeg />
 			<RightPeg />
 			<Window />
@@ -20,8 +23,7 @@ const Tape = styled.div`
 	border-radius: 10px;
 `
 const Label = styled.div`
-	margin-top: 4px;
-	font-size: medium;
+	font-size: small;
 `
 const LeftPeg = styled.div`
 	position: absolute;
