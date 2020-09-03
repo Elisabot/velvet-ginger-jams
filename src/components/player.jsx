@@ -26,7 +26,7 @@ class Player extends React.Component {
 		return (
 			<div>
 				<div>
-					{this.renderCassette('mix seven: Bedroom Dance Party')}
+					{this.renderCassette('7: Bedroom Dance Party')}
 					{/*{this.renderCassette('mix eight: Alien Abduction Luau')}*/}
 				</div>
 				<div>{this.state.isPlaying}</div>

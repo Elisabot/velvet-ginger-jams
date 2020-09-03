@@ -7,8 +7,10 @@ function Cassette(props) {
 			<Label>
 				{props.value}
 			</Label>
-			<LeftPeg />
-			<RightPeg />
+			<Hole position={leftHole} />
+			<Reel className="spinner" position={leftReel} />
+			<Hole position={rightHole} />
+			<Reel className="spinner" position={rightReel} />
 			<Window />
 			<Buttress />
 		</Tape>
@@ -23,26 +25,51 @@ const Tape = styled.div`
 	border-radius: 10px;
 `
 const Label = styled.div`
-	font-size: small;
+	margin-top: 4px;
+	font-size: medium;
+	font-family: 'Sacramento', cursive;
+	max-width: 155px;
 `
-const LeftPeg = styled.div`
+const Hole = styled.div`
+	top: ${props => props.position.top};
+	left: ${props => props.position.left};
+	right: ${props => props.position.right};
+
 	position: absolute;
-	top: 32px;
-	left: 32px;
 	height: 20px;
 	width: 20px;
-	border: 2px solid #F06292;
+	border: 1px solid #F06292;
 	border-radius: 50%;
 `
-const RightPeg = styled.div`
+const leftHole = {
+	top: '32px',
+	left: '32px',
+}
+const rightHole = {
+	top: '32px',
+	right: '32px',
+}
+
+const Reel = styled.div`
+	top: ${props => props.position.top};
+	left: ${props => props.position.left};
+	right: ${props => props.position.right};
+
 	position: absolute;
-	top: 32px;
-	right: 32px;
-	height: 20px;
-	width: 20px;
-	border: 2px solid #F06292;
+	height: 14px;
+	width: 14px;
+	border: 2px dashed #F06292;
 	border-radius: 50%;
 `
+const leftReel = {
+	top: '34px',
+	left: '33px',
+}
+const rightReel = {
+	top: '34px',
+	right: '36px',
+}
+
 const Window = styled.div`
 	position: absolute;
 	top: 32px;
