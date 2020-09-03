@@ -26,8 +26,8 @@ const Tape = styled.div`
 `
 const Label = styled.div`
 	margin-top: 4px;
-	font-size: medium;
-	font-family: 'Sacramento', cursive;
+	font-size: large;
+	font-family: 'Yellowtail', cursive;
 	max-width: 155px;
 `
 const Hole = styled.div`
