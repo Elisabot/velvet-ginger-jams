@@ -3,17 +3,19 @@ import styled from 'styled-components';
 
 function Cassette(props) {
 	return (
-		<Tape className="tape" onClick={props.onClick}>
-			<Label>
-				{props.value}
-			</Label>
-			<Hole position={leftHole} />
-			<Reel className="spinner" position={leftReel} />
-			<Hole position={rightHole} />
-			<Reel className="spinner" position={rightReel} />
-			<Window />
-			<Buttress />
-		</Tape>
+		<div className="Cassette">
+			<Tape className="tape">
+				<Label>
+					{props.tapeLabel}
+				</Label>
+				<Hole position={leftHole} />
+				<Reel className="spinner" position={leftReel} />
+				<Hole position={rightHole} />
+				<Reel className="spinner" position={rightReel} />
+				<Window />
+				<Buttress />
+			</Tape>
+		</div>
 	)
 }
 
@@ -26,6 +28,7 @@ const Tape = styled.div`
 `
 const Label = styled.div`
 	margin-top: 4px;
+  text-align: center;
 	font-size: large;
 	font-family: 'Yellowtail', cursive;
 	max-width: 155px;
