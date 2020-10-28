@@ -1,6 +1,7 @@
 import React from 'react';
 import Cassette from './cassette';
 import PlayBtn from './play-button';
+import styled from 'styled-components';
 
 class Player extends React.Component {
 	constructor(props) {
@@ -20,9 +21,11 @@ class Player extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<PlayBtn onClick={this.handleClick} >{this.state.play ? 'Off': 'ON'}</PlayBtn>
-				<Cassette tapeLabel='mix seven: Bedroom Dance Party' />
+			<div className='Player'>
+				<div className='CtrlPanel'>
+					<PlayBtn onClick={this.handleClick} className='PlayBtn' >{this.state.play ? 'OFF': 'ON'}</PlayBtn>
+				</div>
+				<Cassette tapeLabel='mix 7: Bedroom...' />
 				{/*'mix eight: Alien Abduction Luau'*/}
 			</div>
 		)
