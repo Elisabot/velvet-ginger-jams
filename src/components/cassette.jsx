@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 function Cassette(props) {
 	return (
-		<Tape className="tape" onClick={props.onClick}>
+		<Tape className="tape">
 			<Label>
-				{props.value}
+				{props.tapeLabel}
 			</Label>
 			<Hole position={leftHole} />
 			<Reel className="spinner" position={leftReel} />
