@@ -91,5 +91,4 @@ const Buttress = styled.div`
   border: 1px solid #F06292;
   border-radius: 10px 10px 2px 2px;
 `
-
 export default Cassette
