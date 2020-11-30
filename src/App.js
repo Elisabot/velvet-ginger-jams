@@ -1,8 +1,8 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 import Player from './components/player'
 
-function App() {
+function App () {
   return (
     <div className="App">
       <header className="App-header">
@@ -10,7 +10,7 @@ function App() {
       </header>
       <Player/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
